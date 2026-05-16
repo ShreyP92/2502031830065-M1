@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+    
+    <title>Loops</title>
+</head>
+<body>
+    <script>
+    var a;
+        for (a = 1 ; a <= 10 ; a++ ){
+            document.write("Number :" +a +"<br>");
+        }
+
+        for (let i = 1; i <= 20; i++) {
+            if (i % 2 === 0) {
+            document.write(i + "<br>");
+    }
+}
+
+    let num = 5;
+    let fact = 1;
+        for(let i = 1; i <= num; i++){
+        fact *= i;
+        }
+    document.write("Factorial = " + fact);
+
+    let arr = [10,20,40,60,80];
+    let max = arr [0];
+
+    for(let i = 1; i < arr.length;i++){
+        if (arr[i] > max){
+        max = arr[i];
+    }
+}
+    document.write("Largest =" + max);
+
+    </script>
+    
+</body>
+</html>

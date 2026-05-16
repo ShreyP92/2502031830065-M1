@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+    <title>Array</title>
+</head>
+<body>
+    <script>
+        var Car = new Array(3);
+        Car[0] = "Ford";
+        Car[1] = "Honda";
+        Car[2] = "Toyota";
+
+        var Car2 = new Array("Ford","Toyota","Honda");
+
+        var Car3 = ["Audi","Innova","Maruti700"];
+
+        document.write("Car2: " + Car2 + "<br>");
+
+        Car2.push("Yamaha");
+        document.write("After push: " + Car2 + "<br>");
+
+        Car2.pop();
+        document.write("After pop: " + Car2 + "<br>");
+
+        var data = Car2.concat(Car3);
+        document.write("After concat: " + data + "<br>");
+        
+    </script>
+</body>
+</html>
