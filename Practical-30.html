@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+    <title>Forms using DOM</title>
+</head>
+<body>
+    <form name = "myForm">
+        <label>Username</label>
+        <input type = "text" name = "uname">
+        <br><br>
+        <label>Password</label>
+        <input type = "text" name = "pword">
+        <br><br>
+        <input type = "button" value="Login" onClick="f()">
+        <br><br>
+    </form>
+    <script>
+        function f()
+    {
+            var a = document.forms["myForm"];
+            var u = a.uname.value;
+            var p = a.pword.value;
+            if(u=="admin"&&p=="123")
+        {
+            alert("valid");
+        }
+        else
+        {
+            alert("invalid")
+        }
+    }
+    </script>
+</body>
+</html>

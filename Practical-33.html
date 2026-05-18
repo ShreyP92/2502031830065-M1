@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+    <title>Event handling</title>
+</head>
+<body>
+    Select Product : <select name="" id="Product">
+        <option value="35000">Air Conditionar</option>
+        <option value="20000">Television</option>
+        <option value="15000">Refrigerator</option>
+        <option value="80000">Laptop</option>
+    </select>  
+    <br><br>
+    Net Prize : <input type="text" id="prize"><br><br>
+    Quantity : <input type="text" id="Quantity"><br><br>
+    Total Amount : <input type="text" id="Total Amount"><br><br>
+
+    <script>
+        var Product = document.getElementById("Product");
+        var Quantity = document.getElementById("Quantity");
+        var Amount = document.getElementById("Amount");
+        var Prize = document.getElementById("Prize");
+
+    Product.addEventListener("change",()=>{Prize.value = Product.value;});
+    Amount.addEventListener("focus",()=>{Amount.value = Product.value * Quantity.value;});
+
+    </script>
+</body>
+</html>
